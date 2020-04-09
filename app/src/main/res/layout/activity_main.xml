@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bromo"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="620dp"
+        android:layout_marginTop="62dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/background2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/man"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtUsername"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:hint="User Name"
+                android:textColor="#FF0C0C0C"
+                android:ems="10"
+                android:inputType="text"
+                android:drawableRight="@drawable/ic_account_circle_black_24dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/katasandi"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:hint="Kata Sandi"
+                android:inputType="textPassword"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:drawableLeft="@drawable/ic_https_black_24dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:background="@drawable/bcbutton"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum punya Akun?"
+            android:textColor="#00020A"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
